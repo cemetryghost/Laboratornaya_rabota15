@@ -31,10 +31,6 @@ abstract class Clothes{
         this.price = price;
         this.color = color;
     }
-
-    public void setPrice(double x){
-        this.price = x;
-    }
     public Size getSize(){
         return size;
     }
@@ -48,7 +44,7 @@ abstract class Clothes{
 
 class Atelier{
     void dressAMan(Clothes[] clothes){
-        System.out.println("===== Мужская одежда =====\n");
+        System.out.println("\n" + "===== Мужская одежда =====");
         for(Clothes cloth : clothes){
             if(cloth instanceof MensClothing){
                 System.out.println(cloth);
@@ -56,7 +52,7 @@ class Atelier{
         }
     }
     void dressAWoman(Clothes[] clothes){
-        System.out.println("===== Женская одежда =====\n");
+        System.out.println("\n" + "===== Женская одежда =====");
         for(Clothes cloth : clothes){
             if(cloth instanceof WomenClothing){
                 System.out.println(cloth);
@@ -82,7 +78,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "❈ ═══════❖═══════ ❈" + "\n" + "Размер футболки " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер футболки " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
         }
     }
 
@@ -92,7 +88,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "❈ ═══════❖═══════ ❈" + "\n" + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер штанов " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
         }
     }
 
@@ -102,7 +98,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "❈ ═══════❖═══════ ❈" + "\n" + "Размер юбки " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер юбки " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
         }
     }
 
@@ -112,7 +108,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "❈ ═══════❖═══════ ❈" + "\n" + "Размер галстука " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер галстука " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
         }
     }
 }
@@ -132,7 +128,6 @@ public class Main {
 
         Atelier atelier = new Atelier();
         atelier.dressAMan(clothes);
-        System.out.println();
         atelier.dressAWoman(clothes);
     }
 }
