@@ -17,7 +17,7 @@ enum Size{
         return "Взрослый размер";
     }
     public String toString(){
-        return name() + " (" + euroSize + ") " + getDescription();
+        return name() + " |" + euroSize + "| " + getDescription();
     }
 }
 
@@ -78,7 +78,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "\n" + "Размер футболки " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер футболки " + getSize() + "\n" + "Цвет: " + getColor() + "\n" + "Цена: " + getPrice() + " рублей";
         }
     }
 
@@ -88,7 +88,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "\n" + "Размер штанов " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер штанов " + getSize() + "\n" + "Цвет: " + getColor() + "\n" + "Цена: " + getPrice() + " рублей";
         }
     }
 
@@ -98,7 +98,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "\n" + "Размер юбки " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер юбки " + getSize() + "\n" + "Цвет: " + getColor() + "\n" + "Цена: " + getPrice() + " рублей";
         }
     }
 
@@ -108,7 +108,7 @@ class Atelier{
         }
 
         public String toString() {
-            return "\n" + "Размер галстука " + getSize() + "\n" + "Цена: " + getPrice() + "₽" + "\n" + "Цвет: " + getColor();
+            return "\n" + "Размер галстука " + getSize() + "\n" + "Цвет: " + getColor() + "\n" + "Цена: " + getPrice() + " рублей";
         }
     }
 }
